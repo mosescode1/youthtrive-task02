@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==================
+IT BERIEST STYLING
+======================*/
+.beries {
+    background: #1D1D1D;
+    color: white;
+    display: flex;
+    max-height: 220px;
+    /* align-items: center; */
+    overflow: hidden;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.beries .beries__content {
+    padding: 10px 50px;
+}
+
+.beries h2 {
+    line-height: 2.5;
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+.beries p {
+    margin-bottom: 15px;
+}
+
+.beries button {
+    padding: 5px;
+    text-transform: capitalize;
+    background: #1D1D1D;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.09rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.beries .beries_img {
+    /*height: 0px;
+    */
+    width: 1000px;
+    height: 300px;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+
+.beries .beries_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+==================
+ABOUT ME STYLING
+======================
+*/
+
+.about-me {
+    display: grid;
+    place-items: center;
+}
+
+.about-me .about__me {
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 720px;
+    padding: 20px 50px;
+}
+
+.outline {
+    padding: 10px;
+    border: 4px solid #000;
+    width: 180px;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.about-me-explore {
+    border-top: none;
+    border-bottom: none;
+}
