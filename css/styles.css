@@ -94,3 +94,92 @@ ABOUT ME STYLING
     border-top: none;
     border-bottom: none;
 }
+
+
+/* 
+****************
+SERVICES
+****************** 
+*/
+.services {
+    /* border: 2px solid red; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    max-width: 900px;
+    /* gap: 20px; */
+
+}
+
+.services div p {
+    margin-top: 10px;
+}
+
+.service1,
+.service3,
+.service2 {
+    padding: 20px;
+    position: relative;
+    /* max-width: ; */
+}
+
+.icon {
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: -1;
+    width: 55px;
+    height: 55px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.service3 {
+    grid-column: span 2;
+    margin: 0 auto;
+    max-width: 450px;
+    /* border: 2px solid red; */
+}
+
+.text-detai {
+    /* border: 2px solid green; */
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+
+
+/* SKills  */
+
+
+
+.present-skills {
+    max-width: 800px;
+    /* border: 2px solid green; */
+    margin: 0 auto;
+}
+
+.overall {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    /* border: 2px solid red; */
+
+
+}
+
+.overall div {
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    max-width: 120px;
+}
+
+.overall div p {
+    margin-top: 10px;
+}
