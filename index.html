@@ -3,7 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 		<link rel="stylesheet" href="./css/styles.css" />
+
 		<title>Assignment 1</title>
 	</head>
 	<body>
@@ -11,29 +16,35 @@
 		<header>
 			<nav>
 				<div class="logo">
-					<img src="./assets/logo.png" alt="application logo" />
+					<img src="./assets/logo2.png" alt="application logo" />
 				</div>
 				<ul>
 					<li><a href="#">About me</a></li>
 					<li><a href="#">Skills</a></li>
 					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">CONTACT ME</a></li>
+					<li><a href="#" class="active">CONTACT ME</a></li>
 				</ul>
+
+				<i class="fas fa-bars fa-2x"></i>
 			</nav>
 		</header>
+
 		<main>
 			<!-- HERO-WRAPPER -->
 			<section class="hero-wrapper">
+				<div class="overlays"></div>
 				<div class="hero-text">
-					<h1>Hi, i am</h1>
-					<h2>Tomasz Gajda</h2>
-					<p>Front-end Developer / UI Designer</p>
+					<div class="text">
+						<h1>Hi, i am</h1>
+						<h2>Tomasz Gajda</h2>
+						<p>Front-end Developer / UI Designer</p>
+					</div>
 
 					<div class="hero-icons">
-						<span><img src="./assets/Vector3.png" alt="email" /></span>
+						<span><img src="./assets/email.png" alt="email" /></span>
 						<span><img src="./assets/github.png" alt="github" /></span>
 						<span
-							><img src="./assets/linkedin2.png" alt="linkedin" srcset=""
+							><img src="./assets/linkedin.png" alt="linkedin" srcset=""
 						/></span>
 					</div>
 				</div>
@@ -172,45 +183,50 @@
 					</div>
 				</div>
 
-				<h3>LEARNIG:</h3>
 				<!-- Learning -->
 				<div class="learning-skills">
-					<div class="icon-card">
-						<img src="./assets/nodejs.png" alt="nodejs" />
-						<p>NODEJS</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/mysql.png" alt="mysql" />
-						<p>MYSQL</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/mongodb.png" alt="mongodb" />
-						<p>MONGODB</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/typescript.png" alt="typescript" />
-						<p>TYPESCRIPT</p>
+					<h3>LEARNING:</h3>
+					<div class="flex__card">
+						<div class="icon-card">
+							<img src="./assets/nodejs.png" alt="nodejs" />
+							<p>NODEJS</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/mysql.png" alt="mysql" />
+							<p>MYSQL</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/mongodb.png" alt="mongodb" />
+							<p>MONGODB</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/typescript.png" alt="typescript" />
+							<p>TYPESCRIPT</p>
+						</div>
 					</div>
 				</div>
 
-				<h3>OTHER SKILLS:</h3>
 				<!-- Others -->
 				<div class="other-skills">
-					<div class="icon-card">
-						<img src="./assets/angleski.png" alt="angleski" />
-						<p>ANGIELSKI C1/C2</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/spanish.png" alt="spanish" />
-						<p>HISZPAŃSKI B1/B2</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/c++.png" alt="c++ programing" />
-						<p>C++</p>
-					</div>
-					<div class="icon-card">
-						<img src="./assets/c.png" alt="c programming" />
-						<p>C</p>
+					<h3>OTHER SKILLS:</h3>
+
+					<div class="flex__card">
+						<div class="icon-card">
+							<img src="./assets/angleski.png" alt="angleski" />
+							<p>ANGIELSKI C1/C2</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/spanish.png" alt="spanish" />
+							<p>HISZPAŃSKI B1/B2</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/c++.png" alt="c++ programing" />
+							<p>C++</p>
+						</div>
+						<div class="icon-card">
+							<img src="./assets/c.png" alt="c programming" />
+							<p>C</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -220,22 +236,36 @@
 				<div class="portfolio-wrapper">
 					<h2 class="portfolio-heading outline">PORTFOLIO</h2>
 				</div>
+			</section>
 
+			<section class="tab-flitters">
 				<!-- Filters -->
 				<div class="filter">
-					<span><a href="#">ALL</a></span>
-					<span><a href="#">CODED</a></span>
-					<span><a href="#">DESIGN</a></span>
+					<span
+						><a href="#">ALL</a>
+						<hr
+					/></span>
+					<span
+						><a href="#"
+							>CODED
+							<hr /> </a
+					></span>
+					<span
+						><a href="#">DESIGN</a>
+						<hr
+					/></span>
 				</div>
+			</section>
 
+			<section class="project__line">
 				<!-- projects -->
 				<aside class="projects">
 					<div><img src="./images/Project1.png" alt="" /></div>
 					<div><img src="./images/project2.png" alt="" /></div>
 					<div><img src="./images/Project6.png" alt="" /></div>
-					<div><img src="./images/Project3.png" alt="" /></div>
-					<div><img src="./images/Project4.png" alt="" /></div>
-					<div><img src="./images/Project5.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project3.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project4.png" alt="" /></div>
+					<div class="hidden"><img src="./images/Project5.png" alt="" /></div>
 				</aside>
 				<h3>And many more to come</h3>
 			</section>
@@ -286,7 +316,9 @@
 
 		<!-- Footer -->
 		<footer>
-			<div class="top-icon"></div>
+			<div class="top-icon">
+				<img src="./assets/ic_baseline-double-arrow.svg" alt="" srcset="" />
+			</div>
 			<p>BACK TO TOP</p>
 
 			<div class="icons" style="background-color: black">
